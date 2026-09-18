@@ -272,41 +272,5 @@ int main() {
 
 	std::cout << "\n\nTotal time for all laps: " << total_time << "s \n";
 
-	/*double front_brake_balance{};
-	std::cout << "Enter front brake balance (0 - 1.0): ";
-	std::cin >> front_brake_balance;
-	while (front_brake_balance > 1 || front_brake_balance < 0) {
-		std::cout << "Invalid input. Please enter a value between 0 and 1: ";
-		std::cin >> front_brake_balance;
-	}
-	double rear_brake_balance{ 1.0 - front_brake_balance };
-
-	std::cout << "\nBrake balance (front|rear): " << front_brake_balance * 100 << "% | " << rear_brake_balance * 100 << "%\n";
-
-	std::cout << "\nEnter force on brake pedal: ";
-	double pedal_force{};
-	std::cin >> pedal_force;
-
-	std::cout << "\nAerodynamics: " << downforce_limit_velocity(100) << " m/s  |  No aerodynamics: " << basic_limit_velocity(100) << " m/s\n";
-	std::cout << "Aerodynamics: " << downforce_limit_velocity(100) * 3.6 << " km/h  |  No aerodynamics: " << basic_limit_velocity(100) * 3.6 << " km/h\n";
-	double force_brake_front{ temp_const::k_front * front_brake_balance * pedal_force };
-	double force_brake_rear{ temp_const::k_rear * rear_brake_balance * pedal_force };
-
-	double total_brake_force{ force_brake_front + force_brake_rear };
-
-	std::cout << "\nFront brake force: " << force_brake_front << " N\n"
-			  << "Rear brake force: " << force_brake_rear << " N\n"
-			  << "Total brake force: " << total_brake_force << " N\n";
-
-	std::cout << "\nMaximum possible braking force: " << std::min(grip * (car_weight * constants::g + downforce(velocity)), total_brake_force) << " N\n";
-
-	std::cout << "\nEnter radius next corner: ";
-	double radius_corner{};
-	std::cin >> radius_corner;
-
-	*/
-
-
-
 	return 0;
 }
